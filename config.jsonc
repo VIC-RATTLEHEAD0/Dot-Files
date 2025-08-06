@@ -1,0 +1,102 @@
+{
+  
+  //
+  //
+  //
+  "logo":{
+	  "source":"/home/rares/Pictures/Arch Linux Alt 1.png",
+	  "height":20,
+	  "padding":{
+		  "top":1
+	}
+},
+//
+//
+//
+"display":{
+	"separator":"",
+	"color":{
+		"keys":"red"
+	},
+	"key":{
+		"width": 20,
+		"type": "string"
+	},
+	"bar":{
+		"width": 7,
+		"charElapsed": "",
+		"charTotal": ""
+	},
+	"percent":{
+		"type":2,
+		"color":{
+			"green":"light_green",
+			"yellow":"light_yellow",
+			"red":"light_red"
+		}
+	}
+},
+  "modules": [
+    "break",
+    "break",
+    "break",
+    {
+	    "type": "os",
+	    "key": " |Distro",
+	    "format": "{name}"
+    },
+    {
+	    "type":"kernel",
+	    "key":" |Kernel"
+    },
+    {
+	    "type":"uptime",
+	    "key":"󰛊 |Uptime"
+    },
+    {
+	    "type":"packages",
+	    "key":" |Packages"
+    },
+    {
+	    "type":"shell",
+	    "key":" |Shell",
+	    "format":"{1}"
+    },
+    {
+	    "type":"wm",
+	    "key":" |WM",
+	    "format":"{1}"
+    },
+    {
+	    "type":"terminal",
+	    "key":" |Terminal",
+	    "format":"{1}"
+    },
+    "break",
+    {
+	    "type":"display",
+	    "key":"󰍹 |Display"
+    },
+    {
+	    "type":"host",
+	    "key":" |MotherBoard"
+    },
+    {
+	    "type":"cpu",
+	    "key":" |CPU"
+    },
+    {
+	    "type":"gpu",
+	    "key":"󰢮 |GPU"
+    },
+    {
+	    "type":"memory",
+	    "key":" |RAM"
+    },
+    {
+	    "type":"disk",
+	    "key":" |Storage"
+    },
+    "colors"
+  ]
+}
