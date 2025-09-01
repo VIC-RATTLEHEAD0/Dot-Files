@@ -1,0 +1,92 @@
+{
+  "layer": "bottom",
+  "position": "top",
+  "margin": 10,
+  "autohide": true,
+  "autohide-blocked": false,
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  /* === Modules Order === */
+  "modules-left": [
+    "custom/arch",
+    "custom/firefox",
+    "custom/steam",
+    "custom/neovim"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "clock",
+    "network"
+  ],
+  "custom/arch": {
+    "format": "󰣇",
+    "on-click": "GTK_THEME=Default wofi --show drun --style ~/.config/wofi/style.css --no-initial-filtering",
+    "tooltip": false
+  },
+  "custom/firefox":{
+    "format": "",
+    "on-click":"firefox",
+    "tooltip":false
+  },
+  "custom/steam": {
+	  "format":"",
+	  "tooltip":false,
+	  "on-click":"steam"
+  },
+  "custom/neovim": {
+	  "format":"",
+	  "tooltip":false,
+	  "on-click":"kitty -e nvim"
+  },
+  "clock": {
+    "timezone": "EET",
+    "format": " {:%H:%M}",
+    "tooltip-format": "{calendar}",
+    "calendar": {
+      "mode": "month"
+    }
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+	    "1":"󰀫",
+	    "2":"󰂡",
+	    "3":"󱃮",
+	    "4":"δ",
+	    "5":"󱃠",
+	    "6":"ζ",
+	    "7":"η",
+	    "8":"θ",
+	    "9":"ι",
+	    "10":"λ"
+    },
+    "disable-scroll": true,
+    "all-outputs": true,
+    "show-special": true
+  },
+  "pulseaudio": { 
+	  "format": "{icon}{volume}%", 
+	  "format-muted": " {format_source}", 
+	  "format-icons": { 
+		  "default": [ 
+			  " ", 
+			  " " 
+		  ] 
+	  }, 
+	  "on-click":"pavucontrol", 
+	  "tooltip":false 
+  },
+  "network": {
+    "format-ethernet": "󰈀 Ethernet",
+    "format-disconnected": "Disconnected ",
+    "tooltip-format": "{ifname} via {gwaddr}",
+    "tooltip-format-ethernet": " {ifname} {ipaddr}/{cidr}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+  }
+}
+

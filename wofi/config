@@ -1,0 +1,14 @@
+# Only show the search line and the top suggestion
+lines=5
+dynamic_lines=true
+hide_scroll=true
+
+# Fuzzy search feels best for this
+matching=fuzzy
+insensitive=true
+
+# Set the prompt before the search
+prompt=❯
+
+# Use our theme files
+style=~/.config/wofi/style.css

@@ -1,0 +1,106 @@
+* {
+  border: none;
+  font-family: "JetbrainsMono Nerd Font";
+  font-size: 15px;
+  min-height: 10px;
+}
+window#waybar {
+	background: rgba(22, 19, 32, 100);
+  border: 2px solid rgba(39, 176, 198, 0.6);
+  border-radius: 5px;
+}
+
+#custom-arch,
+#custom-firefox,
+#clock,
+#cpu,
+#memory,
+#disk,
+#pulseaudio,
+#network,
+#custom-steam,
+#custom-neovim {
+  color: #eceff4;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: none;
+  background:rgb(37, 37, 47);
+  margin-left:5px;
+  margin-right:5px;
+  border:2px solid #27b0c6;
+  border-radius:5px;
+}
+#custom-neovim,
+#custom-steam,
+#custom-firefox,
+#custom-arch {
+  padding-right: 10px;
+  padding-left: 7px;
+}
+
+#custom-arch {
+  margin-left:10px;
+}
+
+#network {
+  margin-right: 10px;
+}
+
+#custom-arch {
+  font-size: 20px;
+  color: #89B4FA;
+}
+
+#custom-firefox {
+	font-size: 20px;
+	color: #FF7139;
+  margin-left: 10px;
+}
+
+#custom-steam {
+	font-size: 20px;
+	color: #66c0f4;
+}
+
+#custom-neovim {
+	font-size: 20px;
+	color: #57A143;
+}
+
+#workspaces {
+  background:rgb(37, 37, 47);
+  margin: 6px 5px;
+  padding: 0px 6px;
+  border: 2px solid #27b0c6;
+  border-radius:5px;
+}
+
+#workspaces button {
+  color: #B5E8E0;
+  background: transparent;
+  padding: 4px 4px;
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#workspaces button.occupied {
+  color: #eceff4;
+}
+
+#workspaces button.active {
+  color: #89B4FA;
+}
+
+#workspaces button:hover {
+  color: #89B4FA;
+}
+
+#workspaces button.active:hover {}
+
+@keyframes blink {
+  to {
+    background-color: #BF616A;
+    color: #B5E8E0;
+  }
+}
