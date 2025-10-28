@@ -1,0 +1,407 @@
+{
+  "menus": [
+    {
+      "shortcut": "Meta+Space",
+      "shortcutID": "hyprland-menu",
+      "centered": false,
+      "root": {
+        "type": "submenu",
+        "name": "hyprland-menu",
+        "icon": "archlinux",
+        "iconTheme": "simple-icons",
+        "children": [
+          {
+            "type": "submenu",
+            "name": "Apps",
+            "icon": "apps",
+            "iconTheme": "material-symbols-rounded",
+            "children": [
+              {
+                "type": "command",
+                "data": {
+                  "command": "firefox"
+                },
+                "name": "Firefox",
+                "icon": "firefoxbrowser",
+                "iconTheme": "simple-icons-colored"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "gimp"
+                },
+                "name": "GIMP",
+                "icon": "gimp",
+                "iconTheme": "simple-icons-colored"
+              },
+              {
+                "type": "command",
+                "name": "Steam",
+                "icon": "steam",
+                "iconTheme": "simple-icons-colored",
+                "data": {
+                  "command": "steam",
+                  "detached": true,
+                  "isolated": false,
+                  "delayed": false
+                }
+              },
+              {
+                "type": "settings",
+                "name": "Open Settings",
+                "icon": "settings-item.svg",
+                "iconTheme": "kando",
+                "data": null
+              },
+              {
+                "type": "command",
+                "name": "Wofi",
+                "icon": "search",
+                "iconTheme": "material-symbols-rounded",
+                "data": {
+                  "command": "wofi --show drun",
+                  "detached": false,
+                  "isolated": false,
+                  "delayed": false
+                }
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "nemo"
+                },
+                "name": "File Browser",
+                "icon": "folder",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "name": "Virtual Machines",
+                "icon": "virtualbox",
+                "iconTheme": "simple-icons-colored",
+                "data": {
+                  "command": "virt-manager",
+                  "detached": true,
+                  "isolated": false,
+                  "delayed": false
+                }
+              },
+              {
+                "type": "command",
+                "name": "VLC",
+                "icon": "vlcmediaplayer",
+                "iconTheme": "simple-icons-colored",
+                "data": {
+                  "command": "vlc",
+                  "detached": true,
+                  "isolated": false,
+                  "delayed": false
+                }
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "ghostty"
+                },
+                "name": "Terminal",
+                "icon": "terminal",
+                "iconTheme": "material-symbols-rounded"
+              }
+            ]
+          },
+          {
+            "type": "submenu",
+            "name": "Web Links",
+            "icon": "public",
+            "iconTheme": "material-symbols-rounded",
+            "children": [
+              {
+                "type": "uri",
+                "data": {
+                  "uri": "https://www.youtube.com/"
+                },
+                "name": "YouTube",
+                "icon": "youtube",
+                "iconTheme": "simple-icons-colored"
+              },
+              {
+                "type": "uri",
+                "data": {
+                  "uri": "https://duckduckgo.com/"
+                },
+                "name": "DuckDuckGo",
+                "icon": "duckduckgo",
+                "iconTheme": "simple-icons-colored"
+              },
+              {
+                "type": "uri",
+                "data": {
+                  "uri": "https://discord.com"
+                },
+                "name": "Discord",
+                "icon": "discord",
+                "iconTheme": "simple-icons-colored"
+              },
+              {
+                "type": "uri",
+                "data": {
+                  "uri": "https://github.com"
+                },
+                "name": "GitHub",
+                "icon": "github",
+                "iconTheme": "simple-icons-colored",
+                "angle": 165
+              },
+              {
+                "type": "uri",
+                "name": "YouTube Music",
+                "icon": "youtubemusic",
+                "iconTheme": "simple-icons-colored",
+                "data": {
+                  "uri": "https://music.youtube.com"
+                },
+                "angle": 285
+              }
+            ]
+          },
+          {
+            "type": "hotkey",
+            "data": {
+              "hotkey": "MetaLeft+ShiftLeft+KeyM",
+              "delayed": false
+            },
+            "name": "Next Workspace",
+            "icon": "arrow_forward",
+            "iconTheme": "material-symbols-rounded"
+          },
+          {
+            "type": "submenu",
+            "name": "Clipboard",
+            "icon": "assignment",
+            "iconTheme": "material-symbols-rounded",
+            "children": [
+              {
+                "type": "hotkey",
+                "data": {
+                  "hotkey": "ControlLeft+KeyV",
+                  "delayed": true
+                },
+                "name": "Paste",
+                "icon": "content_paste_go",
+                "iconTheme": "material-symbols-rounded",
+                "angle": 90
+              },
+              {
+                "type": "hotkey",
+                "data": {
+                  "hotkey": "ControlLeft+KeyC",
+                  "delayed": true
+                },
+                "name": "Copy",
+                "icon": "content_copy",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "hotkey",
+                "data": {
+                  "hotkey": "ControlLeft+KeyX",
+                  "delayed": true
+                },
+                "name": "Cut",
+                "icon": "cut",
+                "iconTheme": "material-symbols-rounded"
+              }
+            ]
+          },
+          {
+            "type": "submenu",
+            "name": "Audio",
+            "icon": "play_circle",
+            "iconTheme": "material-symbols-rounded",
+            "children": [
+              {
+                "type": "hotkey",
+                "data": {
+                  "hotkey": "MetaLeft+PageUp",
+                  "delayed": false
+                },
+                "name": "Next Track",
+                "icon": "skip_next",
+                "iconTheme": "material-symbols-rounded",
+                "angle": 90
+              },
+              {
+                "type": "hotkey",
+                "data": {
+                  "hotkey": "MetaLeft+Pause",
+                  "delayed": false
+                },
+                "name": "Play / Pause",
+                "icon": "play_pause",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "hotkey",
+                "data": {
+                  "hotkey": "MetaLeft+AltLeft+F1",
+                  "delayed": false
+                },
+                "name": "Mute",
+                "icon": "music_off",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "hotkey",
+                "data": {
+                  "hotkey": "MetaLeft+PageDown",
+                  "delayed": false
+                },
+                "name": "Previous Track",
+                "icon": "skip_previous",
+                "iconTheme": "material-symbols-rounded",
+                "angle": 270
+              }
+            ]
+          },
+          {
+            "type": "submenu",
+            "name": "Bookmarks",
+            "icon": "folder_special",
+            "iconTheme": "material-symbols-rounded",
+            "children": [
+              {
+                "type": "command",
+                "data": {
+                  "command": "xdg-open \"$(xdg-user-dir DOWNLOAD)\""
+                },
+                "name": "Downloads",
+                "icon": "download",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "xdg-open \"$(xdg-user-dir VIDEOS)\""
+                },
+                "name": "Videos",
+                "icon": "video_camera_front",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "xdg-open \"$(xdg-user-dir PICTURES)\""
+                },
+                "name": "Pictures",
+                "icon": "imagesmode",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "xdg-open \"$(xdg-user-dir DOCUMENTS)\""
+                },
+                "name": "Documents",
+                "icon": "text_ad",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "xdg-open \"$(xdg-user-dir DESKTOP)\""
+                },
+                "name": "Desktop",
+                "icon": "desktop_windows",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "xdg-open ~"
+                },
+                "name": "Home",
+                "icon": "home",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "xdg-open \"$(xdg-user-dir MUSIC)\""
+                },
+                "name": "Music",
+                "icon": "music_note",
+                "iconTheme": "material-symbols-rounded"
+              }
+            ]
+          },
+          {
+            "type": "hotkey",
+            "data": {
+              "hotkey": "MetaLeft+ShiftLeft+KeyN",
+              "delayed": false
+            },
+            "name": "Previous Workspace",
+            "icon": "arrow_back",
+            "iconTheme": "material-symbols-rounded"
+          },
+          {
+            "type": "submenu",
+            "name": "Power Menu",
+            "icon": "radio_button_checked",
+            "iconTheme": "material-symbols-rounded",
+            "data": {},
+            "children": [
+              {
+                "type": "command",
+                "name": "Reboot",
+                "icon": "refresh",
+                "iconTheme": "material-symbols-rounded",
+                "data": {
+                  "command": "reboot",
+                  "detached": true,
+                  "isolated": false,
+                  "delayed": false
+                }
+              },
+              {
+                "type": "command",
+                "name": "Hibernate",
+                "icon": "moon_stars",
+                "iconTheme": "material-symbols-rounded",
+                "data": {
+                  "command": "systemctl hibernate",
+                  "detached": true,
+                  "isolated": false,
+                  "delayed": false
+                }
+              },
+              {
+                "type": "command",
+                "name": "Power off",
+                "icon": "power_settings_circle",
+                "iconTheme": "material-symbols-rounded",
+                "data": {
+                  "command": "poweroff",
+                  "detached": true,
+                  "isolated": false,
+                  "delayed": false
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "hoverMode": true
+    }
+  ],
+  "collections": [
+    {
+      "name": "Favorites",
+      "icon": "favorite",
+      "iconTheme": "material-symbols-rounded",
+      "tags": [
+        "favs"
+      ]
+    }
+  ]
+}

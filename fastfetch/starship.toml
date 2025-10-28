@@ -1,0 +1,70 @@
+# ~/.config/starship.toml
+format = """
+[ 󰣇 ](bg:#4a0a0a fg:#f5c07b)\
+[](bg:#7b1b0e fg:#4a0a0a)\
+$directory\
+[](fg:#7b1b0e bg:#2e0c0c)\
+$git_branch\
+$git_status\
+[](fg:#2e0c0c bg:#1a0a0a)\
+$nodejs\
+$rust\
+$golang\
+$php\
+[](fg:#1a0a0a bg:#100606)\
+$time\
+[ ](fg:#100606)\
+\n$character
+"""
+
+[directory]
+style = "fg:#fff2e0 bg:#7b1b0e"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:#2e0c0c"
+format = '[[ $symbol $branch ](fg:#ff5722 bg:#2e0c0c)]($style)'
+
+[git_status]
+style = "bg:#2e0c0c"
+format = '[[($all_status$ahead_behind )](fg:#ff784e bg:#2e0c0c)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:#1a0a0a"
+format = '[[ $symbol ($version) ](fg:#ff784e bg:#1a0a0a)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:#1a0a0a"
+format = '[[ $symbol ($version) ](fg:#ff784e bg:#1a0a0a)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:#1a0a0a"
+format = '[[ $symbol ($version) ](fg:#ff784e bg:#1a0a0a)]($style)'
+
+[php]
+symbol = ""
+style = "bg:#1a0a0a"
+format = '[[ $symbol ($version) ](fg:#ff784e bg:#1a0a0a)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:#100606"
+format = '[[  $time ](fg:#ffcc66 bg:#100606)]($style)'
+
+[character]
+success_symbol = "[❯ ](bold fg:#ff3b00)"
+error_symbol = "[✖ ](bold fg:#ff0000)"
+vicmd_symbol = "[❮ ](bold fg:#ff9900)"
